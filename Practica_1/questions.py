@@ -63,4 +63,6 @@ for _ in range(3):
     print()
 
 # Se muestra el puntaje final
+if (puntaje < 0.0):
+    puntaje = 0.0
 print(f"Obtuviste {puntaje:.1f} puntos.")
