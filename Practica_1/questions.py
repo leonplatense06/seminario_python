@@ -24,8 +24,9 @@ answers = [
  # Índice de la respuesta correcta para cada pregunta, el el mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
 
- #formo lista de tuplas, cada tupla contiene una pregunta, sus opciones, y su respuesta correcta, es decir, las agrupe
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+ # formo lista de 3 tuplas sin repetirlas (para que no se repita la misma pregunta),
+ # cada tupla contiene una pregunta, sus opciones, y su respuesta correcta, es decir, las agrupe
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 puntaje = 0.0
 # El usuario deberá contestar 3 preguntas
