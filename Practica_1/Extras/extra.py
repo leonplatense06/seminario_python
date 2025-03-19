@@ -1,5 +1,3 @@
-import sys
-
 def menu():
     """Esta Funcion Muestra en Pantalla el Menu Principal del Programa, y noo Retorna un Valor
     Hasta que Este sea Valido."""
@@ -61,4 +59,3 @@ while (option != 4):
             showInv()
     option = menu()
 print("----------------------------\nEjecucion Finalizada.\n----------------------------")
-sys.exit(1)
