@@ -26,6 +26,6 @@ def print_round(stats, mvp):
     print("Player    Kills    Assists    Deaths    MVPs    Points")
     for p in sorted_stats:
         print(f"{p:<12}{sorted_stats[p]['kills']:<10}{sorted_stats[p]['assists']:<10}{sorted_stats[p]['deaths']:<9}\
-{sorted_stats[p]['mvps']:<9}{sorted_stats[p]['points']}")
+{sorted_stats[p]['mvps']:<9}{sorted_stats[p]['points']:<5}" + ("mvp" if p == mvp else ""))
     print("------------------------------------------------------")
     return
