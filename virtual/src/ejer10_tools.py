@@ -10,3 +10,10 @@ def counting_points_mvps(round, points_mvps):
         points_mvps[p]['points'] += round_points
     points_mvps[mvp]['mvps'] += 1
     return mvp
+
+def print_round(round, points_mvps, mvp):
+    """This function prints the stats of a round"""
+    print("Player    Kills    Assists    Deaths    MVPs    Points")
+    for p in round:
+        print(f"""{p}""")
+    return
